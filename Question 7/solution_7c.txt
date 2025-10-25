@@ -1,0 +1,10 @@
+SELECT Branch.branchNo, COUNT(*) AS staff_count, SUM(Staff.salary) AS total_salary
+FROM Staff
+JOIN Branch ON Branch.branchNo = Staff.branchNo  
+GROUP BY Branch.branchNo
+HAVING COUNT(*) > 1;
+--------------------------------------------------------------------------------
+Primary Keys: Branch table- branchNo (branch.branchNo)
+Foreign Keys: staff.branchNo  references branch.branchNo
+Degree of Resulting View: 3
+Cardinality of the Resulting View: 2

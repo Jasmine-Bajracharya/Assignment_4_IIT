@@ -1,0 +1,17 @@
+SELECT 
+    Branch.branchNo,
+    COALESCE(COUNT(DISTINCT Staff.staffNo), 0) AS staff_count,  
+    MAX(CASE WHEN Staff.oPosition = 'Manager' THEN Staff.fName || ' ' || Staff.lName END) AS manager_name,
+    GROUP_CONCAT(DISTINCT PropertyForRent.propertyNo) AS properties_managed
+FROM Branch
+LEFT JOIN Staff ON Branch.branchNo = Staff.branchNo
+LEFT JOIN PropertyForRent 
+    ON Staff.staffNo = PropertyForRent.staffNo 
+    AND PropertyForRent.branchNo = Branch.branchNo
+GROUP BY Branch.branchNo;
+------------------------------------------------------------------------------------
+Primary Keys: branch.branchNo, staff.staffNo
+Foreign Keys: staff.branchNo references (branch.branchNo) , propertyForRent.staffNo (references staff.staffNo), propertyForRent.branchNo (references branch.branchNo)
+Degree of Resulting View: 4
+Cardinality of the Resulting View: 5
+

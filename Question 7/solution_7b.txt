@@ -1,0 +1,9 @@
+SELECT MIN(salary) as minimum_salary, MAX(salary) as maximum_salary, AVG(salary) as average_salary
+FROM Staff;
+
+------------------------------------------------------------------------------------------
+
+Primary Keys: 
+Foreign Keys: 
+Degree of Resulting View: 
+Cardinality of the Resulting View: 

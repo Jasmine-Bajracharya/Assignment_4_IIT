@@ -1,0 +1,101 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+	<head>
+		<title>Sample Grade</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="Author" content="Ward Cunningham">
+		<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+	</head>
+	<body>
+		<h1>
+            Interview</h1>
+        <p>An applicant for a job in a very prestigious company will be 
+		interviewed only if his/her age range is between 25 and 40 inclusive,
+		or the applicant has ten years of experience and 
+		he/she is not older than forty five.</p>
+        <p>For this application you have to set values for <i>age </i>and <i>
+		experience</i>, and
+        expected values for <i>interview</i>.<br>
+        &nbsp;&nbsp;&nbsp; <i>age </i>and <i>experience</i> should be whole numbers<br>
+        &nbsp;&nbsp;&nbsp; <i>interview</i> should be true or false.
+		<p><strong>Notes:</strong><br>
+        1: There may be no errors to find.<br>
+        2: Description and coverage are important.<br>
+        3: Avoid numbers in your description<br>
+        4: Do not write more than 10 tests.<p>There is an example line in the table. You will need to remove / edit this one.<p>&nbsp;
+			<table BORDER="1" cellSpacing="0" cellPadding="3">
+				<tr>
+					<td colspan="3" height="28">Interview.InterviewFixture</td>
+				</tr>
+				<tr>
+					<td>age</td>
+					<td>experience</td>
+					<TD>interview()</TD>
+					<TD>description</TD>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>5</td>
+					<TD>false</TD>
+					<TD>Not old enough</TD>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>0</td>
+					<TD>true</TD>
+					<TD>At the lower boundary of acceptable age</TD>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td>12</td>
+					<TD>true</TD>
+					<TD>Experienced and within acceptable age range</TD>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>5</td>
+					<TD>true</TD>
+					<TD>Is in the specified range of age</TD>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>12</td>
+					<TD>true</TD>
+					<TD>Is in the specified range of age and has enough experience</TD>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td>5</td>
+					<TD>false</TD>
+					<TD>Insufficient experience and not within acceptable age range</TD>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td>12</td>
+					<TD>true</TD>
+					<TD>Experienced and within acceptable age range</TD>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td>10</td>
+					<TD>true</TD>
+					<TD>At the upper limit of age with sufficient experience</TD>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td>12</td>
+					<TD>false</TD>
+					<TD>Is a bit too old</TD>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td>5</td>
+					<TD>false</TD>
+					<TD>Is a bit too old and has insufficient experience</TD>
+				</tr>
+			</table>
+		<p>&nbsp;</p>
+		<p>Document prepared by &lt;Jasmine Bajracharya&gt; &lt;u3312590&gt; (Edit this information)<br />
+          University of Canberra</p>
+		</body>
+</html>

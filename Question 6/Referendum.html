@@ -1,0 +1,99 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+	<head>
+		<title>Referendum</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="Author" content="Ward Cunningham">
+		<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+	</head>
+	<body>
+		<h1>
+            Referendum</h1>
+        <p>To pass a referendum, a motion has to get more than half of the votes
+        and more than half of the states.<br>
+        A state is in favour if more than half of the voters are in favour.</p>
+        <p style="margin-top: 0; margin-bottom: 0">For this application you have
+        to set values for <i>stateVotesFor</i> and <i>stateVotesAgainst</i>, and
+        expected values for o<i>utcome()</i>.<br>
+        &nbsp;&nbsp;&nbsp; <i>stateVotesFor</i> and <i>stateVotesAgainst </i>should
+        be comma separated lists of whole numbers. Note that o<i>utcome() </i>
+		refers to passing or not the referendum.<br>
+        &nbsp;&nbsp;&nbsp; The two lists should be the same length.</p>
+        <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp; o<i>utcome() </i>
+		should be Y or N.</p>
+		<p>Do not test for invalid data!!1</p>
+		<p>&nbsp;<strong>Notes:</strong><br>
+		  1: There may be no errors to find.<br>
+		  2: Description and coverage are important.<br>
+		  3: Avoid numbers in your description<br>
+		  4: Do not write more than 10 tests. You will not need that many.&nbsp;        
+		<p>There is an example line in the table. You may need to remove / edit this one.
+      <table BORDER="1" cellSpacing="0" cellPadding="3">
+		  <tr>
+					<td colspan="3" height="28">Referendum.ReferendumFixture</td>
+				</tr>
+				<tr>
+					<td>description</td>
+					<td>stateVotesFor</td>
+					<td>stateVotesAgainst</td>
+					<TD>o<i>utcome()</i></TD>
+				</tr>
+                
+                <tr>
+                  <td>Majority votes in states for, more votes in favour</td>
+                  <td>120, 80, 60</td>
+                  <td>100, 70, 50</td>
+                  <TD>Y</TD>
+                </tr>
+
+				 <tr>
+                  <td>Majority votes but not majority in states</td>
+                  <td>200, 40, 30</td>
+                  <td>100, 80, 70</td>
+                  <TD>N</TD>
+                </tr>
+				 <tr>
+                  <td>Majority in states but not majority in votes.</td>
+                  <td>60, 70, 80</td>
+                  <td>100, 40, 30</td>
+                  <TD>N</TD>
+                </tr>
+
+				<tr>
+                  <td>Tie in both states and votes.</td>
+                  <td>50, 50, 50</td>
+                  <td>50, 50, 50</td>
+                  <TD>N</TD>
+                </tr>
+
+				<tr>
+                  <td>Minority in both votes and states.</td>
+                  <td>10, 20, 30</td>
+                  <td>40, 50, 60</td>
+                  <TD>N</TD>
+                </tr>
+				<tr>
+                  <td>All states in favor</td>
+                  <td>90, 100, 110</td>
+                  <td>10, 20, 30</td>
+                  <TD>Y</TD>
+                </tr>
+                <tr>
+                  <td>One state is in favor, total votes are high but minority in states.</td>
+                  <td>100, 50, 50</td>
+                  <td>0, 50, 50</td>
+                  <TD>N</TD>
+                </tr>
+
+                <tr>
+                  <td>States have majority and total votes are more than half.</td>
+                  <td>51, 51, 49</td>
+                  <td>49, 49, 51</td>
+                  <TD>Y</TD>
+                </tr>
+                </table>
+      <p>&nbsp;</p>
+      <p>Document prepared by &lt;Jasmine Bajracharya&gt; &lt;u3312590&gt; (Edit this information)<br />
+        University of Canberra</p>
+  </body>
+</html>

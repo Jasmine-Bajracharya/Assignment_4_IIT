@@ -1,0 +1,11 @@
+SELECT city 
+FROM Branch
+UNION
+SELECT city 
+FROM PropertyForRent;
+------------------------------------------------------------------------------------
+Primary Keys: none
+Foreign Keys: none 
+Degree of Resulting View: 1
+Cardinality of the Resulting View: 4
+

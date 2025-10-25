@@ -1,0 +1,10 @@
+SELECT COUNT(*) AS manager_count, SUM(salary) AS total_salary
+FROM Staff
+WHERE oPosition = 'Manager';
+
+-----------------------------------------------------------------
+
+Primary Keys: none
+Foreign Keys: none
+Degree of Resulting View: 2
+Cardinality of the Resulting View: 1

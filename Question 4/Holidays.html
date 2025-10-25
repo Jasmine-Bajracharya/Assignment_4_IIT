@@ -1,0 +1,110 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+	<head>
+		<title>Holidays</title>
+	</head>
+	<body>
+		<h1>Holidays</h1>
+        <p>We can only afford to take a trip if the cost is no more than 
+        $7,500.</p>
+        <p>And if the exchange rate falls below 75<font face="Times New Roman">� 
+        it will have to be in Australia.</font></p>
+        <p><font face="Times New Roman">The function trip OK()</font> works out whether we can or can't go on a holiday. You are to test this function.</p>
+<p>Use integer numbers for trip cost and exchange rate.<br>
+        Use true | false for overseas and trip OK.</p>
+        <p><strong>Notes:</strong><br>
+        1: There may be no errors to find.<br>
+        2: Description and coverage are important.<br>
+        3: Avoid numbers in your description<br>
+        4: Do not write more than 10 tests.</p>
+
+        <p>There is an example line in the table. You will need to remove / edit this one.</p>
+
+<table BORDER="1" cellSpacing="0" cellPadding="3">
+				<tr>
+					<td colspan="2" height="28">Holidays.HolidaysFixture</td>
+				</tr>
+				<tr>
+				  <td width="54">trip cost</td>
+				  <TD width="93">exchange rate</TD>
+				  <TD width="53">overseas</TD>
+				  <TD width="58">trip OK()</TD>
+				  <TD width="352">Description</TD>
+  				</tr>
+                <tr>
+					<td>7000</td>
+					<TD>90</TD>
+					<TD>true</TD>
+					<TD>true</TD>
+					<TD> Trip cost is affordable and exchange rate high enough, so we do a trip in either Australia or overseas.</TD>
+                </tr>
+				<tr>
+					<td>6000</td>
+					<TD>80</TD>
+					<TD>true</TD>
+					<TD>true</TD>
+					<TD> Trip cost is affordable and exchange rate high enough, so we do a trip in either Australia or overseas.</TD>
+                </tr>
+				<tr>
+					<td>6000</td>
+					<TD>75</TD>
+					<TD>true</TD>
+					<TD>true</TD>
+					<TD> Trip cost is affordable and exchange rate high enough, so we do a trip in either Australia or overseas.</TD>
+                </tr>
+				<tr>
+					<td>7500</td>
+					<TD>75</TD>
+					<TD>false</TD>
+					<TD>true</TD>
+					<TD> Trip cost is affordable and exchange rate is not high enough, so we do a trip in Australia.</TD>
+                </tr>
+				<tr>
+					<td>7500</td>
+					<TD>80</TD>
+					<TD>true</TD>
+					<TD>true</TD>
+					<TD> Trip cost is affordable and exchange rate is high enough, so we do a trip in either Australia or overseas.</TD>
+                </tr>
+				<tr>
+					<td>7500</td>
+					<TD>75</TD>
+					<TD>true</TD>
+					<TD>true</TD>
+					<TD> Trip cost is affordable and exchange rate is high enough, so we do a trip in either Australia or overseas.</TD>
+                </tr>
+				<tr>
+					<td>9000</td>
+					<TD>70</TD>
+					<TD>false</TD>
+					<TD>false</TD>
+					<TD> Trip cost is not affordable, so we cannot do a trip.</TD>
+                </tr>
+				<tr>
+					<td>9000</td>
+					<TD>80</TD>
+					<TD>false</TD>
+					<TD>false</TD>
+					<TD> Trip cost is not affordable, so we cannot do a trip.</TD>
+                </tr>
+				<tr>
+					<td>9000</td>
+					<TD>90</TD>
+					<TD>false</TD>
+					<TD>false</TD>
+					<TD> Trip cost is not affordable, so we cannot do a trip despite the exchange rate being high.</TD>
+                </tr>
+				<tr>
+					<td>7000</td>
+					<td>70</td>
+					<td>true</td>
+					<td>false</td>
+					<td>Trip is affordable but exchange rate too low for overseas travel</td>
+				</tr>
+                </table>
+   		<p>&nbsp;</p>
+        <p>Document prepared by &lt;Jasmine Bajracharya&gt; &lt;u3312590&gt;<br />
+          University of Canberra</p>
+
+	</body>
+</html>

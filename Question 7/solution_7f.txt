@@ -1,0 +1,9 @@
+SELECT COUNT(*) AS number_of_assistants, SUM(salary) AS total_salary, AVG(salary) AS average_salry
+FROM Staff
+WHERE oPosition = 'Assistant';
+------------------------------------------------------------------------------------
+Primary Keys: none
+Foreign Keys: none
+Degree of Resulting View: 3
+Cardinality of the Resulting View: 1
+
